@@ -1,0 +1,698 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+header {
+  background-color: #013196;
+}
+header .top {
+  background-color: #013196;
+  height: 40px;
+  padding: 12px 24px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+header .top a {
+  color: white;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+}
+header nav {
+  background-color: #0046be;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 16px 24px;
+  gap: 60px;
+  position: sticky;
+  top: 0;
+}
+nav div {
+  display: flex;
+  gap: 3px;
+  align-items: center;
+  color: white;
+}
+nav div h2 {
+  color: white;
+  font-size: 20px;
+}
+.searchContainer input {
+  width: 390px;
+  padding: 10px 0 10px 10px;
+  outline: none;
+  padding: 8px;
+  border: none;
+  height: 40px;
+  font-size: 16px;
+  font-weight: 300;
+}
+.searchContainer {
+  border-radius: 5px;
+  background-color: #fff;
+  overflow: hidden;
+}
+.searchContainer i {
+  color: #000;
+  padding: 1px 6px;
+  font-size: 24px;
+}
+.searchContainer i:hover {
+  cursor: pointer;
+}
+.aieaContainer {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.bottomNav {
+  display: flex;
+  padding: 16px 24px;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #0342ca;
+  border-top: 0.5px solid hsla(0, 0%, 100%, 0.699);
+}
+.bottomNav ul {
+  display: flex;
+  gap: 15px;
+}
+.bottomNav ul li {
+  list-style: none;
+}
+.bottomNav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 300;
+}
+.bottomNav .leftUl li a:hover {
+  text-decoration: underline;
+}
+.rightUl a {
+  font-weight: 500 !important;
+}
+.bottomNav ul li a i {
+  margin: 3px;
+  border: 1px solid white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 10px;
+}
+
+/* main page  */
+.frontPage {
+  border-top: 2px solid white;
+  background: rgb(4, 9, 33);
+  background: linear-gradient(
+    90deg,
+    rgba(4, 9, 33, 1) 11%,
+    rgba(0, 0, 255, 1) 100%
+  );
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.heroPage {
+  padding: 24px 64px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+.heroPage .left {
+  width: 400px;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.titleContainer {
+  color: #fff200;
+}
+.titleContainer h1 {
+  font-size: 95px;
+  text-transform: capitalize;
+}
+.titleContainer h2 {
+  font-size: 65px;
+}
+.left .goldBar {
+  padding: 12px;
+  font-size: 30px;
+  background: url("https://pisces.bbystatic.com/image2/BestBuy_US/dam/REF-1737670-ghp-bfdrn-gold-bar-241108-824c2de7-600d-42bd-8bdd-9bb9ffc2bc9f.jpg");
+  margin-top: 30px;
+}
+.left h3 {
+  color: #fff200;
+  font-size: 20px;
+  margin: 15px 0;
+}
+.left p {
+  color: #fff;
+  font-size: 11px;
+}
+.left p span {
+  color: #fff200;
+}
+.left button {
+  background-color: #fff200;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  padding: 12px;
+  width: 110px;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+.heroPage .right {
+  flex: 1;
+  /* border: 1px solid green; */
+}
+.ItemsBox {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 10px;
+}
+
+.ItemsBox .item {
+  width: 400px;
+  height: 270px;
+  padding: 16px 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+.ItemsBox .item img {
+  width: 100%;
+}
+.ItemsBox .productTitle {
+  font-size: 17px;
+  font-weight: 600;
+}
+.ItemsBox .shopNow {
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  color: rgb(7, 7, 214);
+}
+.ItemsBox .shopNow:hover {
+  text-decoration: underline;
+}
+.subItem {
+  width: 193px;
+  height: 270px;
+  padding: 16px 24px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-radius: 6px;
+}
+.subItem img {
+  width: 100%;
+}
+.ItemsBox .item:hover {
+  cursor: pointer;
+}
+
+.categoryContainer {
+  /* border: 1px solid red; */
+  margin: 120px 0 50px 0;
+  background-color: hsla(221, 99%, 30%, 0.822);
+}
+.categoryContainer .title {
+  color: rgba(255, 255, 255, 0.784);
+  font-size: 15px;
+  margin: 24px;
+}
+.categoryContainer .carousel {
+  display: flex;
+  gap: 15px;
+  overflow-x: auto;
+}
+.carousel .item {
+  width: 130px;
+}
+.carousel .item .imgContainer {
+  height: 128px;
+  width: 128px;
+  background-color: white;
+  border-radius: 50%;
+  position: relative;
+}
+.carousel .item img {
+  height: 88px;
+  width: 88px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.carousel a {
+  font-size: 13px;
+  color: #ffe000;
+  text-decoration: none;
+  font-weight: 600;
+}
+.carousel p {
+  margin: 10px 0;
+  text-align: center;
+}
+.carousel a:hover {
+  text-decoration: underline;
+}
+
+.newArrivals {
+  margin-top: 30px;
+  padding: 20px;
+}
+.newArrivals .title {
+  font-size: 17px;
+  font-weight: 600;
+  padding: 16px 0;
+  border-bottom: 0.5px solid rgb(81, 79, 79);
+  margin-bottom: 30px;
+  text-decoration: underline;
+  text-underline-offset: 16px;
+  text-decoration-thickness: 4px;
+}
+.arrivalsContainer {
+  display: flex;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 15px;
+}
+.arrivalsContainer .item {
+  border: 0.5px solid rgba(0, 0, 0, 0.547);
+  padding: 16px;
+  width: 269px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 8px;
+}
+.arrivalsContainer .item img {
+  width: 236px;
+}
+.arrivalsContainer p {
+  font-size: 13px;
+  color: #0046be;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.deals {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.deals .item {
+  width: 690px;
+  height: 260px;
+  padding: 20px;
+  border-radius: 8px;
+  border: 0.5px solid rgb(89, 87, 87);
+  /* display: flex; */
+}
+.deals .title {
+  font-size: 17px;
+  font-weight: 600;
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+.deals .outletTitle {
+  background-color: #0046be;
+  padding: 4px 8px;
+  color: white;
+  text-align: center;
+  display: inline-block;
+}
+.deals .outletTitle span {
+  color: #fff200;
+}
+.dealTitle span {
+  background-color: #bb0628;
+  padding: 4px 8px;
+  color: white;
+}
+.dealTitle {
+  border-bottom: 0.5px solid rgb(76, 74, 74);
+  padding-bottom: 10px !important;
+}
+.deals .box {
+  display: flex;
+  gap: 50px;
+  margin-top: 25px;
+}
+.deals .outletDeal .left {
+  width: 200px;
+  margin-left: 30px;
+}
+.box .left h1 {
+  font-size: 40px;
+}
+.box .left h1 span {
+  color: #bb0628;
+}
+.box .left img {
+  width: 200px;
+}
+.box .right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* gap: 30px; */
+}
+.box button {
+  border: 1px solid #0046be;
+  padding: 10px 8px;
+  color: #0046be;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 13px;
+  outline: none;
+  border-radius: 6px;
+  width: 130px;
+  transition: ease-in-out 0.3s;
+}
+.box button:hover {
+  background-color: #042e76;
+  color: white;
+  cursor: pointer;
+}
+.box .right .laptopDes {
+  color: #0046be;
+}
+
+/* flash deals  */
+
+.flashDeals {
+  padding: 20px;
+}
+.flashDeals .heading {
+  background-color: #ffe000;
+  padding: 10px;
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.drops-flash-icon {
+  width: 20px;
+  height: 20px;
+  fill: #ffe000;
+}
+.cyberMonday {
+  background-color: #1d252c;
+  color: #ffe000;
+  font-size: 13px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+.flashDeals .heading h2 {
+  font-size: 20px;
+}
+.flashDeals .heading h2 span {
+  font-size: 14px;
+  font-weight: 400;
+}
+.flashDeals .dealContainer {
+  background: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 1) 11%,
+    rgba(74, 74, 79, 1) 100%
+  );
+  padding: 38px 0 38px 32px;
+}
+
+.dealContainer {
+  display: flex;
+  gap: 40px;
+}
+.dealContainer .drops {
+  width: 194px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.drops button {
+  background-color: #ffe000;
+  padding: 8px 0;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-weight: 600;
+  transition: ease-in-out 0.2s;
+}
+.drops button:hover {
+  background-color: #fff200;
+  cursor: pointer;
+}
+
+.flashCarousel {
+  display: flex;
+  flex: 1;
+  gap: 10px;
+  overflow-x: auto;
+  padding-bottom: 10px;
+  /* border: 2px solid blue; */
+}
+.flashCarousel .item {
+  flex-shrink: 0;
+  width: 170px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.flashCarousel .item .topText {
+  background-color: #e0e6ef;
+  padding: 4px 8px;
+  width: 100%;
+}
+.flashCarousel .item .title {
+  font-size: 13px;
+  text-align: center;
+  padding: 10px;
+}
+
+.twoDeal {
+  display: flex;
+  padding: 20px;
+  justify-content: space-between;
+}
+.twoDeal img {
+  width: 450px;
+  border: 0.5px solid rgba(59, 58, 58, 0.898);
+  height: 450px;
+}
+.twoDeal img:hover {
+  cursor: pointer;
+}
+
+/* footer  */
+footer {
+  background-color: #eff2f4;
+  padding: 40px;
+}
+.topFooter {
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: 60px;
+  border-bottom: 1px solid rgb(56, 53, 53);
+}
+.topFooter .box {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: center;
+}
+.topFooter .box svg {
+  fill: rgba(0, 0, 0, 0.654);
+  height: 55px;
+}
+.topFooter .box a {
+  text-decoration: none;
+  font-size: 13px;
+  font-weight: 600;
+  color: #0046be;
+}
+
+/* footer lists  */
+.centerFooter {
+  display: flex;
+  gap: 50px;
+  padding-top: 20px;
+}
+.centerFooter .lists {
+  flex: 1;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.centerFooter .lists > div {
+  display: flex;
+  justify-content: space-between;
+  /* border: 2px solid blue; */
+}
+.centerFooter .lists h3 {
+  font-size: 17px;
+}
+.centerFooter .lists li {
+  list-style: none;
+  margin-top: 10px;
+}
+.centerFooter .lists li a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #0035a4;
+}
+
+.contactForm {
+  background-color: #fff;
+  padding: 20px;
+  border-top: 1px solid #ddd;
+  height: 100%;
+}
+
+.contactForm a {
+  color: #0046be;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.contactForm a:hover {
+  text-decoration: underline;
+}
+
+.contactForm h2 {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+.contactForm input[type="email"] {
+  padding: 10px;
+  font-size: 1rem;
+  width: 300px;
+  max-width: 100%;
+  margin-right: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.contactForm button {
+  padding: 10px 20px;
+  background-color: #0046be;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.contactForm button:hover {
+  background-color: #0035a4;
+}
+
+.social-icons {
+  margin-top: 20px;
+}
+
+.social-icons a {
+  margin: 0 10px;
+  font-size: 1.5rem;
+  color: #0046be;
+}
+
+.social-icons a:hover {
+  color: #0035a4;
+}
+
+.app-link {
+  margin: 20px 0;
+  font-size: 1rem;
+}
+
+.app-link img {
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.contactForm hr {
+  border: none;
+  height: 1px;
+  background-color: #b8c3b8b2;
+
+  margin: 20px 0;
+}
+
+.bottomFooter div {
+  margin-top: 5se0px;
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  font-size: 15px;
+}
+.bottomFooter .country a {
+  margin-left: 20px;
+}
+.bottomFooter p a {
+  text-decoration: none;
+  font-size: 14px;
+  color: rgb(7, 7, 214);
+}
+.bottomFooter hr {
+  margin: 20px 0;
+}
+.bottomFooter .footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.bottomFooter .footer-links li {
+  list-style: none;
+}
+.bottomFooter .footer-links li a {
+  text-decoration: none;
+  font-size: 12px;
+  font-weight: 300;
+  color: #0035a4;
+}
+.bottomFooter .lastLine {
+  font-size: 14px;
+  margin-top: 20px;
+  font-weight: 200;
+}
+
+@media (min-width: 1500px) {
+  #allContent {
+    max-width: 1500px;
+    margin: auto;
+  }
+}
